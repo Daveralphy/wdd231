@@ -1,0 +1,43 @@
+@media screen and (min-width: 768px) {
+    #menu {
+        display: none;
+    }
+
+    nav {
+        display: block;
+        width: auto;
+    }
+
+    .navigation {
+        display: flex;
+        background-color: transparent;
+    }
+
+    .navigation li a {
+        padding: 0.5rem 1rem;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 2rem;
+        align-items: start;
+    }
+
+    .about {
+        grid-column: 1;
+    }
+
+    .photo {
+        grid-column: 2;
+    }
+
+    .certificate {
+        grid-column: 1 / -1;
+    }
+
+    #course-list {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+    }
+}

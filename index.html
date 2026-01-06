@@ -1,14 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Test Page</title>
-        <link rel="stylesheet" href="styles.css">
-        <script src="script.js"></script>
-    </head>
-    <body>
-        <h1>Welcome to the Test Page</h1>
-        <p>This is a sample paragraph to demonstrate the HTML structure.</p>
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 231 | Course Home</title>
+    <meta name="description" content="WDD 231 course home page demonstrating responsive design, accessibility, and JavaScript fundamentals.">
+    <meta name="author" content="Raphael Daveal">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/course.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<header>
+    <div class="logo">
+        <img src="images/logo.jpg" alt="WDD 231 Logo" width="40" height="40">
+        <span>WDD 231 Course Home Page</span>
+    </div>
+
+    <button id="menu" aria-label="Toggle Navigation"></button>
+
+    <nav>
+        <ul class="navigation">
+            <li><a class="active" href="#">Home</a></li>
+            <li><a href="#">Chamber Project</a></li>
+            <li><a href="#">Final Project</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <h1>Home</h1>
+
+    <section class="card about">
+        <h2>About Me</h2>
+        <p>
+            My name is Raphael Daveal. I am a frontend web development student focused on building accessible,
+            responsive, and performance-optimized web applications. I enjoy translating design concepts into
+            clean, usable interfaces and continuously improving my JavaScript and CSS skills through real projects.
+        </p>
+        <p>
+            This page serves as my course hub for WDD 231 and showcases my progress, completed coursework,
+            and ongoing learning in modern frontend development.
+        </p>
+    </section>
+
+    <section class="card photo">
+        <h2>Student Photo</h2>
+        <img src="images/profile.jpg" alt="Photo of Raphael Daveal" width="300" height="400">
+    </section>
+
+    <section class="card certificate">
+        <h2>Web Certificate Courses</h2>
+
+        <div class="filters">
+            <button id="all">All</button>
+            <button id="cse">CSE</button>
+            <button id="wdd">WDD</button>
+        </div>
+
+        <div id="course-list"></div>
+
+        <p class="credits">
+            The total credits for courses listed above is
+            <span id="total-credits"></span>
+        </p>
+    </section>
+</main>
+
+<footer>
+    <p><span id="currentyear"></span> Raphael Daveal | Lagos, Nigeria</p>
+    <p id="lastModified"></p>
+</footer>
+</body>
 </html>
