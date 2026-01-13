@@ -1,0 +1,60 @@
+{
+    "members": [
+        {
+            "name": "Orem Library",
+            "address": "58 N State St, Orem, UT 84057",
+            "phone": "(801) 229-7050",
+            "website": "https://oremlibrary.org/",
+            "image": "orem_library.jpg",
+            "membershipLevel": "Gold"
+        },
+        {
+            "name": "UVU",
+            "address": "800 W University Pkwy, Orem, UT 84058",
+            "phone": "(801) 863-8000",
+            "website": "https://www.uvu.edu/",
+            "image": "uvu.jpg",
+            "membershipLevel": "Gold"
+        },
+        {
+            "name": "Nates Pantry",
+            "address": "1234 S State St, Orem, UT 84097",
+            "phone": "(801) 555-1234",
+            "website": "https://natespantry.com",
+            "image": "nates_pantry.jpg",
+            "membershipLevel": "Silver"
+        },
+        {
+            "name": "The Flower Shop",
+            "address": "4321 W Center St, Orem, UT 84057",
+            "phone": "(801) 555-5678",
+            "website": "https://flowershop.com",
+            "image": "flower_shop.jpg",
+            "membershipLevel": "Bronze"
+        },
+        {
+            "name": "Tech Hub",
+            "address": "500 Tech Blvd, Lehi, UT 84043",
+            "phone": "(801) 555-9999",
+            "website": "https://techhub.com",
+            "image": "tech_hub.jpg",
+            "membershipLevel": "Gold"
+        },
+        {
+            "name": "City Bakery",
+            "address": "100 Main St, Orem, UT 84057",
+            "phone": "(801) 555-0000",
+            "website": "https://citybakery.com",
+            "image": "city_bakery.jpg",
+            "membershipLevel": "Silver"
+        },
+        {
+            "name": "Mountain Sports",
+            "address": "200 State St, Orem, UT 84057",
+            "phone": "(801) 555-1111",
+            "website": "https://mountainsports.com",
+            "image": "mountain_sports.jpg",
+            "membershipLevel": "Bronze"
+        }
+    ]
+}
