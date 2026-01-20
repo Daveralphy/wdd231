@@ -39,11 +39,12 @@ function displayCurrentWeather(data) {
     const container = document.getElementById('weather-content');
     const iconSrc = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
     const desc = data.weather[0].description;
+    const capitalizedDesc = desc.split(' ').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
     
     container.innerHTML = `
-        <img src="${iconSrc}" alt="${desc}">
+        <img src="${iconSrc}" alt="${capitalizedDesc}" width="100" height="100">
         <p><strong>${Math.round(data.main.temp)}&deg;C</strong></p>
-        <p>${desc}</p>
+        <p>${capitalizedDesc}</p>
     `;
 }
 
@@ -85,9 +86,9 @@ function displaySpotlights(members) {
     // Filter for Gold or Silver members
     const qualifiedMembers = members.filter(member => member.membershipLevel === 'Silver' || member.membershipLevel === 'Gold');
     
-    // Shuffle and pick 2-3
+    // Shuffle and pick 1
     const shuffled = qualifiedMembers.sort(() => 0.5 - Math.random());
-    const selected = shuffled.slice(0, 3);
+    const selected = shuffled.slice(0, 1);
     
     const container = document.getElementById('spotlights');
     

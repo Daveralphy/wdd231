@@ -230,7 +230,7 @@ main {
 
 .events-card, .weather-card, .spotlights {
     background: white;
-    padding: 1.5rem;
+    padding: 1rem;
     border: 1px solid #ddd;
     border-radius: 6px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.05);
