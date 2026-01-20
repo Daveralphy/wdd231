@@ -86,9 +86,9 @@ function displaySpotlights(members) {
     // Filter for Gold or Silver members
     const qualifiedMembers = members.filter(member => member.membershipLevel === 'Silver' || member.membershipLevel === 'Gold');
     
-    // Shuffle and pick 1
+    // Shuffle and pick 2-3
     const shuffled = qualifiedMembers.sort(() => 0.5 - Math.random());
-    const selected = shuffled.slice(0, 1);
+    const selected = shuffled.slice(0, 3);
     
     const container = document.getElementById('spotlights');
     
