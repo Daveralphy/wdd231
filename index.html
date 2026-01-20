@@ -4,20 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WDD 231 | Course Home</title>
+
     <meta name="description" content="WDD 231 course home page demonstrating responsive design, accessibility, and JavaScript fundamentals.">
     <meta name="author" content="Raphael Daveal">
+
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/large.css">
+
     <script src="scripts/navigation.js" defer></script>
-    <script src="scripts/course.js" defer></script>
+
+    <!-- ES MODULE -->
+    <script type="module" src="scripts/modules.mjs"></script>
+
     <script src="scripts/date.js" defer></script>
+
     <link rel="icon" href="images/logo.jpg">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
+
 <header>
     <div class="logo">
         <img src="images/logo.jpg" alt="WDD 231 Logo" width="40" height="40">
@@ -37,33 +46,32 @@
 </header>
 
 <main>
-    <h1>Home</h1>
 
+    <!-- ABOUT -->
     <section class="card about">
-        <h2>About Me</h2>
+        <h1>About Me</h1>
         <p>
             My name is Raphael Daveal. I am a frontend web development student focused on building accessible,
-            responsive, and performance-optimized web applications. I enjoy translating design concepts into
-            clean, usable interfaces and continuously improving my JavaScript and CSS skills through real projects.
-        </p>
-        <p>
-            This page serves as my course hub for WDD 231 and showcases my progress, completed coursework,
-            and ongoing learning in modern frontend development.
+            responsive, and performance-optimized web applications. I have a passion for creating clean, 
+            efficient code and user-friendly interfaces that solve real-world problems.
         </p>
     </section>
 
+    <!-- PHOTO -->
     <section class="card photo">
-        <h2>Student Photo</h2>
         <img src="images/profile.jpg" alt="Photo of Raphael Daveal" width="300" height="400">
     </section>
 
+    <!-- COURSE FILTER CARDS -->
     <section class="card certificate">
         <h2>Web Certificate Courses</h2>
 
-        <div class="filters">
-            <button id="all">All</button>
-            <button id="cse">CSE</button>
-            <button id="wdd">WDD</button>
+        <div class="course-filter">
+            <button id="filter-button" aria-label="Filter Courses">Filter <span class="icon">&#9776;</span></button>
+            <div id="filter-dropdown" class="hidden">
+                <label><input type="checkbox" id="cse-filter" checked> CSE</label>
+                <label><input type="checkbox" id="wdd-filter" checked> WDD</label>
+            </div>
         </div>
 
         <div id="course-list"></div>
@@ -73,11 +81,37 @@
             <span id="total-credits"></span>
         </p>
     </section>
+
+    <!-- MODULE ENROLLMENT SYSTEM -->
+    <section class="card course-enrollment">
+        <h2>Course Enrollment</h2>
+
+        <label for="sectionNumber">Choose a section:</label>
+        <select id="sectionNumber"></select>
+
+        <div class="filters">
+            <button id="enrollStudent">Enroll Student</button>
+            <button id="dropStudent">Drop Student</button>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Section</th>
+                    <th>Enrolled</th>
+                    <th>Instructor</th>
+                </tr>
+            </thead>
+            <tbody id="sections"></tbody>
+        </table>
+    </section>
+
 </main>
 
 <footer>
     <p><span id="currentyear"></span> Raphael Daveal | Lagos, Nigeria</p>
     <p id="lastModified"></p>
 </footer>
+
 </body>
 </html>
