@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chamber of Commerce | Home</title>
+    <meta name="description" content="Chamber of Commerce Home Page featuring local events, weather, and business spotlights.">
+    <meta name="author" content="Raphael Daveal">
+    <meta property="og:title" content="Chamber of Commerce Home">
+    <meta property="og:description" content="Join the Chamber of Commerce to connect with local businesses and grow your network.">
+    <meta property="og:image" content="https://daveralphy.github.io/wdd231/images/logo.jpg">
+    <meta property="og:url" content="https://daveralphy.github.io/wdd231/chamber/index.html">
+    
+    <link rel="icon" href="../images/logo.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/chamber.css">
+    
+    <script src="../scripts/navigation.js" defer></script>
+    <script src="scripts/home.js" defer></script>
+</head>
+<body>
+    <header>
+        <button id="menu" aria-label="Toggle Navigation"></button>
+        <nav>
+            <ul class="navigation">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="#">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="#">Join</a></li>
+            </ul>
+        </nav>
+        <h1>Chamber of Commerce</h1>
+        <!-- No toggle view button needed on home -->
+    </header>
+
+    <main>
+        <div class="hero">
+            <img src="images/hero.jpg" alt="Chamber Hero Image" width="1200" height="600">
+            <div class="cta-container">
+                <h2>Building Business Together</h2>
+                <a href="join.html" class="cta-button">Join the Chamber</a>
+            </div>
+        </div>
+
+        <div class="home-grid">
+            <section class="events-card">
+                <h3>Current Events</h3>
+                <ul>
+                    <li><strong>Networking Night:</strong> Nov 15th, 6:00 PM</li>
+                    <li><strong>Business Workshop:</strong> Nov 22nd, 10:00 AM</li>
+                    <li><strong>Annual Gala:</strong> Dec 5th, 7:00 PM</li>
+                </ul>
+            </section>
+
+            <section class="weather-card">
+                <h3>Weather</h3>
+                <div id="weather-content">Loading weather...</div>
+                <div id="forecast"></div>
+            </section>
+
+            <section id="spotlights" class="spotlights">
+                <!-- Spotlights injected by JS -->
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
