@@ -270,7 +270,7 @@ main {
 
 .membership-level {
     font-weight: bold;
-    color: var(--accent);
+    color: var(--secondary);
     margin-top: 0.5rem;
 }
 
