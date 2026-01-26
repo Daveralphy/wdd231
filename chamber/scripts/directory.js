@@ -1,5 +1,8 @@
 const membersContainer = document.querySelector("#members")
-const toggleButton = document.querySelector("#toggleView")
+const viewBtn = document.getElementById('view-toggle-btn');
+const viewDialog = document.getElementById('view-dialog');
+const gridBtn = document.getElementById('view-grid');
+const listBtn = document.getElementById('view-list');
 
 async function getMembers() {
   try {
@@ -44,20 +47,34 @@ membersContainer.append(section)
 })
 }
 
-toggleButton.addEventListener("click", () => {
-  membersContainer.classList.toggle("list")
-  if (membersContainer.classList.contains("list")) {
-    toggleButton.textContent = "▦" // Switch to Grid Icon
-  } else {
-    toggleButton.textContent = "📄" // Switch to List Icon
-  }
-})
+if (viewBtn && viewDialog) {
+    viewBtn.addEventListener('click', () => {
+        if (viewDialog.open) {
+            viewDialog.close();
+        } else {
+            viewDialog.show();
+        }
+    });
+
+    document.addEventListener('click', (event) => {
+        if (!viewBtn.contains(event.target) && !viewDialog.contains(event.target) && viewDialog.open) {
+            viewDialog.close();
+        }
+    });
+
+    if (gridBtn) gridBtn.addEventListener('click', () => {
+        membersContainer.classList.remove('list');
+        viewDialog.close();
+    });
+
+    if (listBtn) listBtn.addEventListener('click', () => {
+        membersContainer.classList.add('list');
+        viewDialog.close();
+    });
+}
 
 const currentYear = new Date().getFullYear();
 document.querySelector("#lastModified").innerHTML = 
 `&copy; ${currentYear} Raphael Daveal | Last Modified: ${document.lastModified}`;
-
-// Set initial icon
-toggleButton.textContent = "📄";
 
 getMembers()

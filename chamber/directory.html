@@ -25,16 +25,34 @@
         <nav>
             <ul class="navigation">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="#">Discover</a></li>
+                <li><a href="discover.html">Discover</a></li>
                 <li><a href="directory.html" class="active">Directory</a></li>
-                <li><a href="#">Join</a></li>
+                <li><a href="join.html">Join</a></li>
             </ul>
         </nav>
         <div class="header-title">Chamber of Commerce</div>
-        <button id="toggleView" aria-label="Toggle View"></button>
     </header>
     <main>
-        <h1>Chamber Directory</h1>
+        <div class="page-title-bar">
+            <h1>Chamber Directory</h1>
+            <div class="directory-controls">
+                <button id="view-toggle-btn" aria-label="View Options">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="21" x2="4" y2="14"></line><line x1="4" y1="10" x2="4" y2="3"></line><line x1="12" y1="21" x2="12" y2="12"></line><line x1="12" y1="8" x2="12" y2="3"></line><line x1="20" y1="21" x2="20" y2="16"></line><line x1="20" y1="12" x2="20" y2="3"></line><line x1="1" y1="14" x2="7" y2="14"></line><line x1="9" y1="8" x2="15" y2="8"></line><line x1="17" y1="16" x2="23" y2="16"></line></svg>
+                </button>
+                <dialog id="view-dialog">
+                    <div class="dialog-content">
+                        <button id="view-grid" class="view-option">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
+                            Grid
+                        </button>
+                        <button id="view-list" class="view-option">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="8" y1="6" x2="21" y2="6"></line><line x1="8" y1="12" x2="21" y2="12"></line><line x1="8" y1="18" x2="21" y2="18"></line><line x1="3" y1="6" x2="3.01" y2="6"></line><line x1="3" y1="12" x2="3.01" y2="12"></line><line x1="3" y1="18" x2="3.01" y2="18"></line></svg>
+                            List
+                        </button>
+                    </div>
+                </dialog>
+            </div>
+        </div>
         <article id="members">
             <!-- Members will be injected here -->
         </article>
