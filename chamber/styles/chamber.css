@@ -458,7 +458,7 @@ form legend {
     }
 }
 
-.card h3 {
+.card h2 {
     color: var(--primary);
     margin-top: 0;
 }
