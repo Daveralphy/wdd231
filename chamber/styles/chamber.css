@@ -7,6 +7,8 @@
     --accent-hover: #d4a017;
     --card: #f4f4f4;
     --text: #333333;
+    --border: #dddddd;
+    --shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 /* General Reset & Typography */
@@ -114,11 +116,11 @@ main {
 }
 
 .member {
-    background-color: white;
-    border: 1px solid #ddd;
+    background-color: var(--background);
+    border: 1px solid var(--border);
     padding: 20px;
     text-align: center;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: var(--shadow);
     border-radius: 6px;
 }
 
@@ -137,7 +139,7 @@ main {
     width: 100%;
     height: 200px;
     object-fit: cover;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    box-shadow: var(--shadow);
     margin-bottom: 10px;
 }
 
@@ -220,11 +222,11 @@ main {
 }
 
 .events-card, .weather-card, .spotlights {
-    background: white;
+    background: var(--background);
     padding: 1rem;
-    border: 1px solid #ddd;
+    border: 1px solid var(--border);
     border-radius: 6px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    box-shadow: var(--shadow);
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -433,12 +435,12 @@ form legend {
 }
 
 .card {
-    background: white;
-    border: 1px solid #ddd;
+    background: var(--background);
+    border: 1px solid var(--border);
     padding: 1.5rem;
     border-radius: 6px;
     text-align: center;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: var(--shadow);
     animation: slideIn 0.8s ease-out forwards;
     opacity: 0; /* Start hidden for animation */
 }
@@ -500,10 +502,10 @@ dialog::backdrop {
 
 /* Thank You Page */
 .results-card {
-    background: white;
+    background: var(--background);
     padding: 2rem;
     border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: var(--shadow);
     margin-top: 1rem;
 }
 
@@ -596,7 +598,7 @@ dialog::backdrop {
     background-color: var(--card);
     padding: 1.5rem;
     border-radius: 6px;
-    border: 1px solid #ddd;
+    border: 1px solid var(--border);
     text-align: center;
     font-weight: bold;
     color: var(--primary);
@@ -632,11 +634,11 @@ dialog::backdrop {
 
 /* Place Card Styling */
 .place-card {
-    background: white;
-    border: 1px solid #ddd;
+    background: var(--background);
+    border: 1px solid var(--border);
     border-radius: 6px;
     padding: 1rem;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: var(--shadow);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
