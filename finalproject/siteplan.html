@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="Site plan website for WindVeal Technologies Limited project" />
+<meta name="author" content="Raphael Daveal" />
+<title>Site Plan for WindVeal Technologies Website</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --primary: #37000a;
+  --secondary: #7e007b;
+  --accent: #735cdd;
+  --text: #37000a;
+  --bg: #ffffff;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+header {
+  background: var(--primary);
+  color: white;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+header h1 {
+  margin: 0;
+  color: white;
+}
+
+.visit-btn {
+  background-color: var(--accent);
+  color: white;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+main {
+  max-width: 1000px;
+  margin: auto;
+  padding: 1rem;
+}
+
+section {
+  border: 1px solid #ddd;
+  margin-bottom: 1rem;
+  padding: 1rem;
+}
+
+h1, h2, h3 {
+  color: var(--primary);
+}
+
+.color-palette {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.color-item {
+  flex: 1 1 200px;
+}
+
+.color-swatch {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0.5rem;
+  border: 1px solid #ccc;
+}
+
+.wf-view {
+  border: 2px solid #333;
+  background: #fff;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 0.8rem;
+  text-align: center;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+  margin-bottom: 1rem;
+}
+
+.wireframe-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.wf-mobile { width: 200px; }
+.wf-desktop { width: 100%; max-width: 600px; }
+
+.wf-header, .wf-footer, .wf-block {
+  border: 1px solid #999;
+  background: #eee;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wf-header { background: #ccc; justify-content: space-between; }
+.wf-footer { background: #ccc; }
+
+.wf-row {
+  display: flex;
+  gap: 8px;
+}
+
+.wf-col {
+  flex: 1;
+  border: 1px solid #999;
+  background: #eee;
+  padding: 15px 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer {
+  background: var(--primary);
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+</style>
+</head>
+
+<body>
+<header>
+  <h1>Site Plan for WindVeal Technologies Website</h1>
+  <a href="index.html" class="visit-btn">Visit Site</a>
+</header>
+
+<main>
+<section id="name">
+  <h2>Site Name</h2>
+  <p><strong>WindVeal Technologies Limited</strong></p>
+  <p>This site name was selected because it is the real and official brand of my startup. The name identifies the organization clearly and supports branding, visibility, and professional recognition for software and AI services.</p>
+  <p>Optional domain idea: windveal.com</p>
+</section>
+
+<section id="purpose">
+  <h2>Site Purpose</h2>
+  <p>The purpose of the website is to provide information and services about WindVeal Technologies Limited. The site will present company background, describe services, display portfolio projects, publish blog articles, and provide a contact form for inquiries.</p>
+</section>
+
+<section id="scenarios">
+  <h2>Scenarios</h2>
+  <ul>
+    <li>How can WindVeal Technologies help automate my business processes?</li>
+    <li>Where can I view previous projects built by WindVeal Technologies?</li>
+    <li>Can I read educational articles about AI and software on this site?</li>
+  </ul>
+</section>
+
+<section id="design">
+  <h2>Color Scheme</h2>
+  <div class="color-palette">
+    <div class="color-item">
+      <p><strong>Rich Mahogany – #37000a</strong><br>Primary / Text</p>
+      <div class="color-swatch" style="background:#37000a;color:white">#37000a</div>
+    </div>
+    <div class="color-item">
+      <p><strong>Purple – #7e007b</strong><br>Secondary</p>
+      <div class="color-swatch" style="background:#7e007b;color:white">#7e007b</div>
+    </div>
+    <div class="color-item">
+      <p><strong>Slate Blue – #735cdd</strong><br>Accent</p>
+      <div class="color-swatch" style="background:#735cdd;color:white">#735cdd</div>
+    </div>
+    <div class="color-item">
+      <p><strong>Royal Orchid – #9000b3</strong><br>Highlights</p>
+      <div class="color-swatch" style="background:#9000b3;color:white">#9000b3</div>
+    </div>
+    <div class="color-item">
+      <p><strong>Periwinkle – #b3c2f2</strong><br>Backgrounds</p>
+      <div class="color-swatch" style="background:#b3c2f2;color:#37000a">#b3c2f2</div>
+    </div>
+  </div>
+
+  <h2>Typography</h2>
+  <p><strong>Roboto:</strong> Used for all body text and paragraphs.</p>
+  <p><strong>Roboto Bold:</strong> Used for all headings and navigation labels.</p>
+  <p>The site plan page itself applies these fonts in the CSS above to demonstrate actual use.</p>
+
+  <h2>Wireframes – Home Page Layout</h2>
+  <div class="wireframe-container">
+    <div>
+      <h3>Mobile View</h3>
+      <div class="wf-view wf-mobile">
+        <div class="wf-header"><span>Logo</span> <span>☰</span></div>
+        <div class="wf-block" style="height: 80px;">Hero Image & CTA</div>
+        <div class="wf-block">Services (Stacked)</div>
+        <div class="wf-block">Portfolio (Stacked)</div>
+        <div class="wf-block">Blog (Stacked)</div>
+        <div class="wf-footer">Footer</div>
+      </div>
+    </div>
+
+    <div>
+      <h3>Desktop View</h3>
+      <div class="wf-view wf-desktop">
+        <div class="wf-header">
+          <span>Logo</span>
+          <span>Nav: Home | Services | Portfolio | Blog</span>
+        </div>
+        <div class="wf-row">
+          <div class="wf-col">Hero Text</div>
+          <div class="wf-col">Hero Image</div>
+        </div>
+        <div class="wf-row">
+          <div class="wf-col">Service 1</div>
+          <div class="wf-col">Service 2</div>
+          <div class="wf-col">Service 3</div>
+        </div>
+        <div class="wf-block">Portfolio Grid</div>
+        <div class="wf-row">
+          <div class="wf-col">Blog 1</div>
+          <div class="wf-col">Blog 2</div>
+        </div>
+        <div class="wf-footer">Footer (3 Columns)</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="features">
+  <h2>JavaScript Features</h2>
+  <ul>
+    <li>Fetch API with try/catch</li>
+    <li>15+ dynamic items</li>
+    <li>Modal dialogs</li>
+    <li>Local storage</li>
+    <li>ES Modules</li>
+  </ul>
+</section>
+</main>
+
+<footer>
+  <p>Raphael Daveal – WDD231</p>
+</footer>
+
+<script>
+console.log("Site plan loaded");
+</script>
+</body>
+</html>
