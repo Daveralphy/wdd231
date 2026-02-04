@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover | Chamber of Commerce</title>
+    <meta name="description" content="Discover local attractions and places of interest in the Chamber of Commerce area.">
+    <meta name="author" content="Raphael Daveal">
+    <meta property="og:title" content="Discover Local Attractions">
+    <meta property="og:description" content="Explore the best places to visit in our community.">
+    <meta property="og:image" content="https://daveralphy.github.io/wdd231/images/logo.jpg">
+    <meta property="og:url" content="https://daveralphy.github.io/wdd231/chamber/discover.html">
+    
+    <link rel="icon" href="../images/logo.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/chamber.css">
+    
+    <script src="../scripts/navigation.js" defer></script>
+    <script type="module" src="scripts/discover.js" defer></script>
+</head>
+<body>
+    <header>
+        <button id="menu" aria-label="Toggle Navigation"></button>
+        <nav>
+            <ul class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html" class="active">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+            </ul>
+        </nav>
+        <div class="header-title">Chamber of Commerce</div>
+    </header>
+
+    <main>
+        <div class="page-title-bar">
+            <h1>Discover Our Community</h1>
+        </div>
+        <div class="discover-container">
+            <aside class="sidebar" id="visitor-message">
+                <!-- Message injected by JS -->
+            </aside>
+            <div class="places-grid" id="places-grid">
+                <!-- Cards injected by JS -->
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

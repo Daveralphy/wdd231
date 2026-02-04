@@ -578,3 +578,144 @@ dialog::backdrop {
         right: 0;
     }
 }
+
+/* ================= DISCOVER PAGE STYLES ================= */
+
+/* Page Layout using Named Grid Areas */
+.discover-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    grid-template-areas: 
+        "sidebar"
+        "content";
+}
+
+.sidebar {
+    grid-area: sidebar;
+    background-color: var(--card);
+    padding: 1.5rem;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    text-align: center;
+    font-weight: bold;
+    color: var(--primary);
+    height: fit-content;
+}
+
+.places-grid {
+    grid-area: content;
+    display: grid;
+    gap: 1.5rem;
+    /* Mobile View: Stacked */
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+        "card1"
+        "card2"
+        "card3"
+        "card4"
+        "card5"
+        "card6"
+        "card7"
+        "card8";
+}
+
+/* Assign Grid Areas to Cards */
+.place-card:nth-child(1) { grid-area: card1; }
+.place-card:nth-child(2) { grid-area: card2; }
+.place-card:nth-child(3) { grid-area: card3; }
+.place-card:nth-child(4) { grid-area: card4; }
+.place-card:nth-child(5) { grid-area: card5; }
+.place-card:nth-child(6) { grid-area: card6; }
+.place-card:nth-child(7) { grid-area: card7; }
+.place-card:nth-child(8) { grid-area: card8; }
+
+/* Place Card Styling */
+.place-card {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 1rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.place-card h2 {
+    margin-top: 0;
+    font-size: 1.25rem;
+}
+
+.place-card address {
+    font-style: italic;
+    margin-bottom: 0.5rem;
+    color: var(--secondary);
+}
+
+.place-card figure {
+    margin: 0;
+    padding: 0;
+}
+
+.place-card figure img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-bottom: 0.5rem;
+}
+
+.learn-more-btn {
+    display: inline-block;
+    background-color: var(--secondary);
+    color: white;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 4px;
+    text-align: center;
+    margin-top: auto;
+}
+
+.learn-more-btn:hover {
+    background-color: var(--primary);
+}
+
+/* Responsive Layouts */
+@media (min-width: 768px) {
+    /* Tablet: Sidebar left, Content right */
+    .discover-container {
+        grid-template-columns: 250px 1fr;
+        grid-template-areas: "sidebar content";
+    }
+
+    .places-grid {
+        /* Tablet: 2 Columns */
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+            "card1 card2"
+            "card3 card4"
+            "card5 card6"
+            "card7 card8";
+    }
+
+    /* Image Hover Effect (Desktop only per rubric) */
+    .place-card figure img {
+        transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+    .place-card figure img:hover {
+        transform: scale(1.03);
+        opacity: 0.9;
+    }
+}
+
+@media (min-width: 1024px) {
+    /* Desktop: Custom Grid Layout (Not just simple columns) */
+    .places-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: 
+            "card1 card2 card3"
+            "card4 card5 card5" /* Card 5 spans 2 columns */
+            "card6 card7 card8";
+    }
+}
