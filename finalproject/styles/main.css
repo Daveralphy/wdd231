@@ -455,12 +455,6 @@ section:nth-child(even) {
     margin-top: 2rem;
 }
 
-.thankyou-main {
-    max-width: 800px; 
-    margin: auto; 
-    padding: 1rem;
-}
-
 /* Liquid Button */
 .liquid-button {
     position: relative;
@@ -613,4 +607,10 @@ section:nth-child(even) {
 
 .plan .button:hover, .plan .button:focus {
   background-color: #4133B7;
+}
+
+.thankyou-main {
+    max-width: 800px; 
+    margin: auto; 
+    padding: 1rem;
 }
