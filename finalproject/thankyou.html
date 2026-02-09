@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Thank You - WindVeal</title>
+<link rel="stylesheet" href="styles/main.css">
+<script type="module" src="scripts/menu.js"></script>
+</head>
+<body>
+
+<header>
+<div class="brand">
+    <img src="images/logo.png" alt="WindVeal Logo" height="50">
+    <h1>Thank You</h1>
+</div>
+<button id="menu">☰</button>
+<nav id="navList">
+<a href="index.html">Home</a>
+<a href="portfolio.html">Portfolio</a>
+<a href="blog.html">Blog</a>
+<a href="contact.html">Contact</a>
+</nav>
+</header>
+
+<main style="max-width:800px; margin:auto; padding:1rem;">
+    <h2>Message Received!</h2>
+    <p>Thank you for contacting WindVeal Technologies. We have received the following details:</p>
+    <div id="results" class="card"></div>
+</main>
+
+<footer>
+<p id="copyright"></p>
+</footer>
+
+<script>
+    const params = new URLSearchParams(window.location.search);
+    const container = document.getElementById('results');
+    const fields = [
+        { key: 'firstname', label: 'First Name' },
+        { key: 'lastname', label: 'Last Name' },
+        { key: 'email', label: 'Email' },
+        { key: 'phone', label: 'Phone' },
+        { key: 'organization', label: 'Organization' },
+        { key: 'timestamp', label: 'Date' }
+    ];
+
+    fields.forEach(field => {
+        if (params.has(field.key)) {
+            container.innerHTML += `<p><strong>${field.label}:</strong> ${params.get(field.key)}</p>`;
+        }
+    });
+</script>
+</body>
+</html>

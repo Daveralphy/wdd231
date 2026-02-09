@@ -1,0 +1,17 @@
+[
+{"id":1,"name":"Website Design","price":"100","duration":"2 weeks","level":"basic"},
+{"id":2,"name":"AI Chatbot","price":"200","duration":"3 weeks","level":"pro"},
+{"id":3,"name":"UI Design","price":"120","duration":"1 week","level":"basic"},
+{"id":4,"name":"Automation","price":"300","duration":"4 weeks","level":"pro"},
+{"id":5,"name":"SEO","price":"80","duration":"1 week","level":"basic"},
+{"id":6,"name":"Mobile App","price":"500","duration":"6 weeks","level":"pro"},
+{"id":7,"name":"Logo","price":"40","duration":"3 days","level":"basic"},
+{"id":8,"name":"Dashboard","price":"250","duration":"3 weeks","level":"pro"},
+{"id":9,"name":"API Build","price":"350","duration":"4 weeks","level":"pro"},
+{"id":10,"name":"Training","price":"70","duration":"1 day","level":"basic"},
+{"id":11,"name":"Maintenance","price":"60","duration":"monthly","level":"basic"},
+{"id":12,"name":"Hosting","price":"30","duration":"monthly","level":"basic"},
+{"id":13,"name":"Testing","price":"90","duration":"1 week","level":"basic"},
+{"id":14,"name":"Analytics","price":"150","duration":"2 weeks","level":"pro"},
+{"id":15,"name":"Consulting","price":"110","duration":"1 week","level":"basic"}
+]
