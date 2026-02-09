@@ -16,6 +16,12 @@ async function loadContent() {
         if (!response.ok) throw new Error('Failed to fetch data');
         const data = await response.json();
 
+        // Set Site Title globally for all pages
+        const siteTitle = document.querySelector('#siteTitle');
+        if (siteTitle) {
+            siteTitle.textContent = 'WindVeal Technologies';
+        }
+
         const container = document.querySelector('#serviceContainer');
         if (!container) return;
 
@@ -47,10 +53,6 @@ function setHeroText() {
     const heroText = document.querySelector('#heroText');
     if (heroText) {
         heroText.textContent = 'Automating your business processes with AI and Software Solutions.';
-    }
-    const siteTitle = document.querySelector('#siteTitle');
-    if (siteTitle) {
-        siteTitle.textContent = 'WindVeal Technologies';
     }
 }
 

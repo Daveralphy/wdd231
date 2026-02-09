@@ -19,13 +19,15 @@
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles/main.css">
 <script type="module" src="scripts/menu.js"></script>
+<script type="module" src="scripts/main.js"></script>
+<script type="module" src="scripts/storage.js"></script>
 </head>
 <body>
 
 <header>
 <div class="brand">
     <img src="images/logo.png" alt="WindVeal Logo" height="50">
-    <h1>Thank You</h1>
+    <h1 id="siteTitle"></h1>
 </div>
 <button id="menu">☰</button>
 <nav id="navList">
@@ -37,6 +39,7 @@
 </header>
 
 <main class="thankyou-main">
+    <h2 class="section-title">Thank You</h2>
     <h2>Message Received!</h2>
     <p>Thank you for contacting WindVeal Technologies. We have received the following details:</p>
     <div id="results" class="card"></div>
