@@ -80,9 +80,9 @@ function renderCards(items, container, type) {
             descText = item.duration;
             priceText = `$${item.price}`;
         } else if (type === 'portfolio') {
-            descText = item.client;
+            descText = `<strong>Client:</strong> ${item.client}<br><strong>Tools:</strong> ${item.tools}<br>${item.description}`;
         } else if (type === 'blog') {
-            descText = `By ${item.author}`;
+            descText = `<strong>Author:</strong> ${item.author}<br><strong>Category:</strong> ${item.category}<br>${item.summary}`;
         }
 
         card.innerHTML = `

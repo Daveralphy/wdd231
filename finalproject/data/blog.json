@@ -1,0 +1,17 @@
+[
+    {"id": 1, "title": "The Future of AI", "author": "Raphael Daveal", "category": "Tech", "summary": "How AI is reshaping industries in 2026."},
+    {"id": 2, "title": "Web Trends 2026", "author": "Jane Doe", "category": "Design", "summary": "Minimalism and speed are key."},
+    {"id": 3, "title": "Cloud Security", "author": "John Smith", "category": "Security", "summary": "Protecting your data in the cloud."},
+    {"id": 4, "title": "JS Frameworks", "author": "Raphael Daveal", "category": "Dev", "summary": "React vs Vue vs Angular."},
+    {"id": 5, "title": "Remote Work", "author": "Sarah Lee", "category": "Lifestyle", "summary": "Tips for staying productive."},
+    {"id": 6, "title": "Green Tech", "author": "Mike Brown", "category": "Innovation", "summary": "Sustainable technology solutions."},
+    {"id": 7, "title": "5G Impact", "author": "Raphael Daveal", "category": "Tech", "summary": "Faster connectivity for everyone."},
+    {"id": 8, "title": "UX Principles", "author": "Jane Doe", "category": "Design", "summary": "Designing for the user first."},
+    {"id": 9, "title": "Big Data", "author": "John Smith", "category": "Data", "summary": "Making sense of massive datasets."},
+    {"id": 10, "title": "Blockchain", "author": "Raphael Daveal", "category": "Finance", "summary": "Beyond cryptocurrency."},
+    {"id": 11, "title": "IoT Homes", "author": "Sarah Lee", "category": "Tech", "summary": "Smart devices for everyday life."},
+    {"id": 12, "title": "Cyber Threats", "author": "Mike Brown", "category": "Security", "summary": "Common attacks and prevention."},
+    {"id": 13, "title": "Coding for Kids", "author": "Jane Doe", "category": "Education", "summary": "Why programming is a vital skill."},
+    {"id": 14, "title": "Startup 101", "author": "Raphael Daveal", "category": "Business", "summary": "Launching your tech company."},
+    {"id": 15, "title": "Digital Detox", "author": "Sarah Lee", "category": "Health", "summary": "Balancing screen time."}
+]

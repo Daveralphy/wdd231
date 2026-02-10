@@ -1,0 +1,17 @@
+[
+    {"id": 1, "name": "ShopEasy", "client": "Retail Corp", "tools": "React, Node.js", "description": "Full-stack e-commerce platform."},
+    {"id": 2, "name": "HealthTrack", "client": "MedLife", "tools": "Python, AI", "description": "Patient monitoring system."},
+    {"id": 3, "name": "FinDash", "client": "BankOne", "tools": "Angular, D3.js", "description": "Financial analytics dashboard."},
+    {"id": 4, "name": "EduLearn", "client": "School District", "tools": "Vue.js, Firebase", "description": "Remote learning portal."},
+    {"id": 5, "name": "AutoBot", "client": "CarFactory", "tools": "C++, IoT", "description": "Assembly line automation."},
+    {"id": 6, "name": "TravelMate", "client": "TourGuide", "tools": "Flutter", "description": "Travel booking app."},
+    {"id": 7, "name": "Foodie", "client": "RestaurantChain", "tools": "React Native", "description": "Food delivery service."},
+    {"id": 8, "name": "SecureNet", "client": "CyberSec", "tools": "Python, Kali", "description": "Network security tool."},
+    {"id": 9, "name": "GreenEnergy", "client": "SolarCo", "tools": "IoT, Azure", "description": "Energy consumption tracker."},
+    {"id": 10, "name": "LegalEase", "client": "LawFirm", "tools": "Java, SQL", "description": "Case management system."},
+    {"id": 11, "name": "ArtGallery", "client": "Museum", "tools": "Three.js", "description": "Virtual reality tour."},
+    {"id": 12, "name": "FitLife", "client": "GymBrand", "tools": "Swift", "description": "Workout tracking app."},
+    {"id": 13, "name": "PropManage", "client": "RealEstate", "tools": "PHP, Laravel", "description": "Property management CRM."},
+    {"id": 14, "name": "LogiTrack", "client": "ShippingCo", "tools": "Go, AWS", "description": "Logistics optimization."},
+    {"id": 15, "name": "EventHub", "client": "EventPlanner", "tools": "Next.js", "description": "Event ticketing system."}
+]
