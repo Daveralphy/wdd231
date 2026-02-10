@@ -148,7 +148,7 @@ justify-items: center;
   position: absolute;
   top: 12px;
   right: 12px;
-  background: #10b981;
+  background: #047857;
   color: white;
   padding: 0.25em 0.5em;
   border-radius: 999px;
@@ -465,19 +465,19 @@ section:nth-child(even) {
     font-size: 18px;
     letter-spacing: 1px;
     text-decoration: none;
-    color: #005785;
+    color: #ffffff;
     background: transparent;
     cursor: pointer;
     transition: ease-out 0.5s;
-    border: 2px solid #005785;
+    border: 2px solid #ffffff;
     border-radius: 10px;
-    box-shadow: inset 0 0 0 0 #005785;
+    box-shadow: inset 0 0 0 0 #ffffff;
     font-weight: bold;
 }
 
 .liquid-button:hover {
-    color: white;
-    box-shadow: inset 0 -100px 0 0 #005785;
+    color: #003057;
+    box-shadow: inset 0 -100px 0 0 #ffffff;
 }
 
 .liquid-button:active {
